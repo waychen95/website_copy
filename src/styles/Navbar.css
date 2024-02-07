@@ -1,0 +1,115 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  padding: 1rem 0 1rem;
+}
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  background-color: #33333367; /* Add a background color for the sticky navbar */
+  z-index: 1000;
+  padding: 1rem 0 1rem;
+}
+
+.website-logo {
+  width: 25%;
+  height: 100%;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.5 ease-in-out;
+  color: black;
+}
+
+.left-side h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.left-side h1:hover {
+  cursor: default;
+}
+
+.logo {
+  white-space: nowrap;
+}
+
+.navbar-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0.5rem;
+}
+
+.navbar-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar-option a {
+  margin-right: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.navbar-option a:hover {
+  color: gray;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  cursor: pointer;
+}
+
+.hamburgerMenu {
+  display: none;
+}
+
+.hiddenLinks {
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.5 ease-in-out;
+}
+
+.logo {
+  display: flex;
+  
+}
+
+@media screen and (max-width: 800px) {
+
+
+  .navbar-option {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .hamburgerMenu {
+    display: flex;
+    margin-right: 1rem;
+  }
+
+  .left-side {
+    flex: 50%;
+    height: 100%;
+    margin-left: 3rem;
+  }
+
+  .css-6hp17o-MuiList-root-MuiMenu-list {
+    padding: 2rem;
+  }
+}

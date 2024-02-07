@@ -1,0 +1,18 @@
+.main {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.banner-text {
+  text-align: left;
+  height: 50%;
+  width: 60%;
+  padding: 2rem;
+}
